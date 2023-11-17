@@ -11,6 +11,14 @@
 		23A6C7E62AFD5C4200C9A49F /* InternetManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A6C7DB2AFD5C4200C9A49F /* InternetManager.framework */; };
 		23A6C7EB2AFD5C4200C9A49F /* InternetManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A6C7EA2AFD5C4200C9A49F /* InternetManagerTests.swift */; };
 		23A6C7EC2AFD5C4200C9A49F /* InternetManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 23A6C7DE2AFD5C4200C9A49F /* InternetManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23F7E9AD2B07A9020089D380 /* InternetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7E9AC2B07A9020089D380 /* InternetManager.swift */; };
+		23F7E9B02B07A9A30089D380 /* InternetManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7E9AF2B07A9A30089D380 /* InternetManagerProtocol.swift */; };
+		23F7E9B22B07A9CE0089D380 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7E9B12B07A9CE0089D380 /* URLSessionDataTaskProtocol.swift */; };
+		23F7E9B42B07A9EB0089D380 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7E9B32B07A9EB0089D380 /* URLSessionProtocol.swift */; };
+		23F7E9B72B07AA670089D380 /* MockInternetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7E9B62B07AA670089D380 /* MockInternetManager.swift */; };
+		23F7E9B92B07AA760089D380 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7E9B82B07AA760089D380 /* MockURLSession.swift */; };
+		23F7E9BB2B07AA7E0089D380 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7E9BA2B07AA7E0089D380 /* MockURLSessionDataTask.swift */; };
+		23F7E9C02B07B7B50089D380 /* InternetManagerSlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7E9BF2B07B7B50089D380 /* InternetManagerSlowTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,14 @@
 		23A6C7DF2AFD5C4200C9A49F /* InternetManager.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = InternetManager.docc; sourceTree = "<group>"; };
 		23A6C7E52AFD5C4200C9A49F /* InternetManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InternetManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A6C7EA2AFD5C4200C9A49F /* InternetManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetManagerTests.swift; sourceTree = "<group>"; };
+		23F7E9AC2B07A9020089D380 /* InternetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetManager.swift; sourceTree = "<group>"; };
+		23F7E9AF2B07A9A30089D380 /* InternetManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetManagerProtocol.swift; sourceTree = "<group>"; };
+		23F7E9B12B07A9CE0089D380 /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
+		23F7E9B32B07A9EB0089D380 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		23F7E9B62B07AA670089D380 /* MockInternetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockInternetManager.swift; sourceTree = "<group>"; };
+		23F7E9B82B07AA760089D380 /* MockURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		23F7E9BA2B07AA7E0089D380 /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
+		23F7E9BF2B07B7B50089D380 /* InternetManagerSlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetManagerSlowTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +71,7 @@
 			children = (
 				23A6C7DD2AFD5C4200C9A49F /* InternetManager */,
 				23A6C7E92AFD5C4200C9A49F /* InternetManagerTests */,
+				23F7E9BC2B07B7440089D380 /* InternetManagerSlowTests */,
 				23A6C7DC2AFD5C4200C9A49F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,8 +88,11 @@
 		23A6C7DD2AFD5C4200C9A49F /* InternetManager */ = {
 			isa = PBXGroup;
 			children = (
+				23F7E9B52B07AA410089D380 /* Mocks */,
+				23F7E9AE2B07A9520089D380 /* MockProtocols */,
 				23A6C7DE2AFD5C4200C9A49F /* InternetManager.h */,
 				23A6C7DF2AFD5C4200C9A49F /* InternetManager.docc */,
+				23F7E9AC2B07A9020089D380 /* InternetManager.swift */,
 			);
 			path = InternetManager;
 			sourceTree = "<group>";
@@ -83,6 +103,34 @@
 				23A6C7EA2AFD5C4200C9A49F /* InternetManagerTests.swift */,
 			);
 			path = InternetManagerTests;
+			sourceTree = "<group>";
+		};
+		23F7E9AE2B07A9520089D380 /* MockProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				23F7E9AF2B07A9A30089D380 /* InternetManagerProtocol.swift */,
+				23F7E9B12B07A9CE0089D380 /* URLSessionDataTaskProtocol.swift */,
+				23F7E9B32B07A9EB0089D380 /* URLSessionProtocol.swift */,
+			);
+			path = MockProtocols;
+			sourceTree = "<group>";
+		};
+		23F7E9B52B07AA410089D380 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				23F7E9B62B07AA670089D380 /* MockInternetManager.swift */,
+				23F7E9B82B07AA760089D380 /* MockURLSession.swift */,
+				23F7E9BA2B07AA7E0089D380 /* MockURLSessionDataTask.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		23F7E9BC2B07B7440089D380 /* InternetManagerSlowTests */ = {
+			isa = PBXGroup;
+			children = (
+				23F7E9BF2B07B7B50089D380 /* InternetManagerSlowTests.swift */,
+			);
+			path = InternetManagerSlowTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +242,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23F7E9B42B07A9EB0089D380 /* URLSessionProtocol.swift in Sources */,
+				23F7E9AD2B07A9020089D380 /* InternetManager.swift in Sources */,
+				23F7E9B72B07AA670089D380 /* MockInternetManager.swift in Sources */,
 				23A6C7E02AFD5C4200C9A49F /* InternetManager.docc in Sources */,
+				23F7E9B92B07AA760089D380 /* MockURLSession.swift in Sources */,
+				23F7E9BB2B07AA7E0089D380 /* MockURLSessionDataTask.swift in Sources */,
+				23F7E9B22B07A9CE0089D380 /* URLSessionDataTaskProtocol.swift in Sources */,
+				23F7E9B02B07A9A30089D380 /* InternetManagerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23A6C7EB2AFD5C4200C9A49F /* InternetManagerTests.swift in Sources */,
+				23F7E9C02B07B7B50089D380 /* InternetManagerSlowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +401,7 @@
 		23A6C7F02AFD5C4200C9A49F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -375,6 +432,7 @@
 		23A6C7F12AFD5C4200C9A49F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -405,6 +463,7 @@
 		23A6C7F32AFD5C4200C9A49F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -420,6 +479,7 @@
 		23A6C7F42AFD5C4200C9A49F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol InternetManagerProtocol {
+public protocol InternetManagerProtocol {
     func downloadImage(with url: URL, completion: @escaping (UIImage?) -> Void)
     func getData(with url: URL?, completion: @escaping (Data?) -> Void)
 }

@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol URLSessionDataTaskProtocol {
+public protocol URLSessionDataTaskProtocol {
     func resume()
 }

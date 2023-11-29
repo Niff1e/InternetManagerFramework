@@ -1,8 +1,8 @@
 //
 //  InternetManagerSlowTests.swift
-//  InternetManagerTests
+//  InternetManagerSlowTests
 //
-//  Created by Pavel Maal on 17.11.23.
+//  Created by Pavel Maal on 29.11.23.
 //
 
 import XCTest
@@ -68,6 +68,5 @@ final class InternetManagerSlowTests: XCTestCase {
         // then
         XCTAssertNotNil(finalData, "Data receiving failed")
     }
-
 
 }

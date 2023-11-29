@@ -11,6 +11,8 @@
 		23A6C7E62AFD5C4200C9A49F /* InternetManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A6C7DB2AFD5C4200C9A49F /* InternetManager.framework */; };
 		23A6C7EB2AFD5C4200C9A49F /* InternetManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A6C7EA2AFD5C4200C9A49F /* InternetManagerTests.swift */; };
 		23A6C7EC2AFD5C4200C9A49F /* InternetManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 23A6C7DE2AFD5C4200C9A49F /* InternetManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23CCABD52B175C2D001E4D05 /* InternetManagerSlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CCABD42B175C2D001E4D05 /* InternetManagerSlowTests.swift */; };
+		23CCABD62B175C2D001E4D05 /* InternetManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A6C7DB2AFD5C4200C9A49F /* InternetManager.framework */; };
 		23F7E9AD2B07A9020089D380 /* InternetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7E9AC2B07A9020089D380 /* InternetManager.swift */; };
 		23F7E9B02B07A9A30089D380 /* InternetManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7E9AF2B07A9A30089D380 /* InternetManagerProtocol.swift */; };
 		23F7E9B22B07A9CE0089D380 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7E9B12B07A9CE0089D380 /* URLSessionDataTaskProtocol.swift */; };
@@ -18,11 +20,17 @@
 		23F7E9B72B07AA670089D380 /* MockInternetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7E9B62B07AA670089D380 /* MockInternetManager.swift */; };
 		23F7E9B92B07AA760089D380 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7E9B82B07AA760089D380 /* MockURLSession.swift */; };
 		23F7E9BB2B07AA7E0089D380 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7E9BA2B07AA7E0089D380 /* MockURLSessionDataTask.swift */; };
-		23F7E9C02B07B7B50089D380 /* InternetManagerSlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7E9BF2B07B7B50089D380 /* InternetManagerSlowTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		23A6C7E72AFD5C4200C9A49F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23A6C7D22AFD5C4100C9A49F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23A6C7DA2AFD5C4200C9A49F;
+			remoteInfo = InternetManager;
+		};
+		23CCABD72B175C2D001E4D05 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 23A6C7D22AFD5C4100C9A49F /* Project object */;
 			proxyType = 1;
@@ -37,6 +45,8 @@
 		23A6C7DF2AFD5C4200C9A49F /* InternetManager.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = InternetManager.docc; sourceTree = "<group>"; };
 		23A6C7E52AFD5C4200C9A49F /* InternetManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InternetManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A6C7EA2AFD5C4200C9A49F /* InternetManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetManagerTests.swift; sourceTree = "<group>"; };
+		23CCABD22B175C2D001E4D05 /* InternetManagerSlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InternetManagerSlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23CCABD42B175C2D001E4D05 /* InternetManagerSlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetManagerSlowTests.swift; sourceTree = "<group>"; };
 		23F7E9AC2B07A9020089D380 /* InternetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetManager.swift; sourceTree = "<group>"; };
 		23F7E9AF2B07A9A30089D380 /* InternetManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetManagerProtocol.swift; sourceTree = "<group>"; };
 		23F7E9B12B07A9CE0089D380 /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
@@ -44,7 +54,6 @@
 		23F7E9B62B07AA670089D380 /* MockInternetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockInternetManager.swift; sourceTree = "<group>"; };
 		23F7E9B82B07AA760089D380 /* MockURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		23F7E9BA2B07AA7E0089D380 /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
-		23F7E9BF2B07B7B50089D380 /* InternetManagerSlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetManagerSlowTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		23CCABCF2B175C2D001E4D05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23CCABD62B175C2D001E4D05 /* InternetManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -71,7 +88,7 @@
 			children = (
 				23A6C7DD2AFD5C4200C9A49F /* InternetManager */,
 				23A6C7E92AFD5C4200C9A49F /* InternetManagerTests */,
-				23F7E9BC2B07B7440089D380 /* InternetManagerSlowTests */,
+				23CCABD32B175C2D001E4D05 /* InternetManagerSlowTests */,
 				23A6C7DC2AFD5C4200C9A49F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +98,7 @@
 			children = (
 				23A6C7DB2AFD5C4200C9A49F /* InternetManager.framework */,
 				23A6C7E52AFD5C4200C9A49F /* InternetManagerTests.xctest */,
+				23CCABD22B175C2D001E4D05 /* InternetManagerSlowTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +123,14 @@
 			path = InternetManagerTests;
 			sourceTree = "<group>";
 		};
+		23CCABD32B175C2D001E4D05 /* InternetManagerSlowTests */ = {
+			isa = PBXGroup;
+			children = (
+				23CCABD42B175C2D001E4D05 /* InternetManagerSlowTests.swift */,
+			);
+			path = InternetManagerSlowTests;
+			sourceTree = "<group>";
+		};
 		23F7E9AE2B07A9520089D380 /* MockProtocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,14 +149,6 @@
 				23F7E9BA2B07AA7E0089D380 /* MockURLSessionDataTask.swift */,
 			);
 			path = Mocks;
-			sourceTree = "<group>";
-		};
-		23F7E9BC2B07B7440089D380 /* InternetManagerSlowTests */ = {
-			isa = PBXGroup;
-			children = (
-				23F7E9BF2B07B7B50089D380 /* InternetManagerSlowTests.swift */,
-			);
-			path = InternetManagerSlowTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +201,24 @@
 			productReference = 23A6C7E52AFD5C4200C9A49F /* InternetManagerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		23CCABD12B175C2D001E4D05 /* InternetManagerSlowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23CCABD92B175C2D001E4D05 /* Build configuration list for PBXNativeTarget "InternetManagerSlowTests" */;
+			buildPhases = (
+				23CCABCE2B175C2D001E4D05 /* Sources */,
+				23CCABCF2B175C2D001E4D05 /* Frameworks */,
+				23CCABD02B175C2D001E4D05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23CCABD82B175C2D001E4D05 /* PBXTargetDependency */,
+			);
+			name = InternetManagerSlowTests;
+			productName = InternetManagerSlowTests;
+			productReference = 23CCABD22B175C2D001E4D05 /* InternetManagerSlowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,6 +233,9 @@
 						CreatedOnToolsVersion = 15.0.1;
 					};
 					23A6C7E42AFD5C4200C9A49F = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					23CCABD12B175C2D001E4D05 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
@@ -216,6 +255,7 @@
 			targets = (
 				23A6C7DA2AFD5C4200C9A49F /* InternetManager */,
 				23A6C7E42AFD5C4200C9A49F /* InternetManagerTests */,
+				23CCABD12B175C2D001E4D05 /* InternetManagerSlowTests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +269,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		23A6C7E32AFD5C4200C9A49F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23CCABD02B175C2D001E4D05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,7 +305,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				23A6C7EB2AFD5C4200C9A49F /* InternetManagerTests.swift in Sources */,
-				23F7E9C02B07B7B50089D380 /* InternetManagerSlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23CCABCE2B175C2D001E4D05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23CCABD52B175C2D001E4D05 /* InternetManagerSlowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +323,11 @@
 			isa = PBXTargetDependency;
 			target = 23A6C7DA2AFD5C4200C9A49F /* InternetManager */;
 			targetProxy = 23A6C7E72AFD5C4200C9A49F /* PBXContainerItemProxy */;
+		};
+		23CCABD82B175C2D001E4D05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23A6C7DA2AFD5C4200C9A49F /* InternetManager */;
+			targetProxy = 23CCABD72B175C2D001E4D05 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -492,6 +551,36 @@
 			};
 			name = Release;
 		};
+		23CCABDA2B175C2D001E4D05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = someCoolGuy.InternetManagerSlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23CCABDB2B175C2D001E4D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = someCoolGuy.InternetManagerSlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -518,6 +607,15 @@
 			buildConfigurations = (
 				23A6C7F32AFD5C4200C9A49F /* Debug */,
 				23A6C7F42AFD5C4200C9A49F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23CCABD92B175C2D001E4D05 /* Build configuration list for PBXNativeTarget "InternetManagerSlowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23CCABDA2B175C2D001E4D05 /* Debug */,
+				23CCABDB2B175C2D001E4D05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
